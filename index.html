@@ -16,13 +16,6 @@
 				color: #B22222; /* Rosso più chiaro tendente al borgogna */
 			}
 
-			/* Sfondo sfumato in bianco e rosato per la sezione Chi Siamo */
-			#one {
-				background: linear-gradient(to bottom, #FFFFFF, #FFE6E6); /* Da bianco a rosato */
-				color: #4B0000; /* Testo in rosso borgogna scuro */
-				padding: 4em 2em;
-			}
-
 			/* Animazioni */
 			.fade-in {
 				animation: fadeIn 2s ease-in-out;
@@ -47,6 +40,30 @@
 			a:hover, .button:hover {
 				color: #FFFAFA; /* Sfumatura bianca leggermente rosata */
 				transition: color 0.3s ease;
+			}
+
+			/* Modifiche per la sezione "Chi Siamo" */
+			#one {
+				background: linear-gradient(to bottom, #FFFFFF, #FFE6E6); /* Da bianco a rosato */
+				color: #4B0000; /* Testo in rosso borgogna scuro per contrasto */
+				padding: 4em 2em;
+			}
+
+			/* Stile e animazioni per il testo */
+			#one h2, #one p {
+				color: #800000; /* Rosso scuro per il testo */
+				animation: fadeIn 2s ease-in-out;
+			}
+
+			/* Animazione per le icone */
+			.icons.major li span {
+				animation: bounce 2s infinite;
+			}
+
+			@keyframes bounce {
+				0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+				40% { transform: translateY(-20px); }
+				60% { transform: translateY(-10px); }
 			}
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
