@@ -1,130 +1,156 @@
 <!DOCTYPE HTML>
-<!--
-	Spectral by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Spectral by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Colorazione principale in rosso */
+			body, #header, #footer, .button.primary {
+				background-color: #b30000; /* Rosso scuro per creare contrasto */
+				color: #fff;
+			}
+
+			h1, h2, p, a, .button, .scrolly {
+				color: #ff3333; /* Rosso brillante per dare più risalto */
+			}
+
+			/* Animazioni */
+			.fade-in {
+				animation: fadeIn 2s ease-in-out;
+			}
+
+			@keyframes fadeIn {
+				0% { opacity: 0; }
+				100% { opacity: 1; }
+			}
+
+			.bounce {
+				animation: bounce 2s infinite;
+			}
+
+			@keyframes bounce {
+				0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+				40% { transform: translateY(-20px); }
+				60% { transform: translateY(-10px); }
+			}
+
+			/* Hover e transizioni */
+			a:hover, .button:hover {
+				color: #ff6666;
+				transition: color 0.3s ease;
+			}
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="landing is-preload">
+	<body class="landing is-preload fade-in">
 
 		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+		<div id="page-wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Spectral</a></h1>
-						<nav id="nav">
-							<ul>
-								<li class="special">
-									<a href="#menu" class="menuToggle"><span>Menu</span></a>
-									<div id="menu">
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Recensioni</a></li>
-											<li><a href="elements.html">Link Utili</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
-										</ul>
-									</div>
-								</li>
-							</ul>
-						</nav>
+			<!-- Header -->
+			<header id="header" class="alt fade-in">
+				<h1><a href="index.html" class="bounce">Spectral</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle bounce"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html" class="fade-in">Home</a></li>
+									<li><a href="generic.html" class="fade-in">Recensioni</a></li>
+									<li><a href="elements.html" class="fade-in">Link Utili</a></li>
+									<li><a href="#" class="fade-in">Sign Up</a></li>
+									<li><a href="#" class="fade-in">Log In</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Banner -->
+			<section id="banner" class="fade-in">
+				<div class="inner bounce">
+					<div class="image"><img src="images/banner.jpg" alt="" class="fade-in" /></div>
+					<div class="content fade-in">
+						<h2>Roma RP</h2>
+						<p>Un'esperienza indimenticabile<br />
+						Piena di RP e di emozioni<br />
+						Entra qui! <a href="https://discord.gg/romav5">Roma-RP V5</a>.</p>
+						<ul class="actions special">
+							<li><a href="#" class="button primary bounce">Activate</a></li>
+						</ul>
+					</div>
+					<a href="#one" class="more scrolly fade-in">Scopri la nostra storia!</a>
+				</div>
+			</section>
+
+			<!-- One -->
+			<section id="one" class="wrapper style1 special fade-in">
+				<div class="inner">
+					<header class="major fade-in">
+						<h2>Chi Siamo?<br /></h2>
+						<p>Salve, siamo Roma RP, una community ambientata a Roma su ER:LC in costante crescita...</p>
 					</header>
+					<ul class="icons major">
+						<li><span class="icon fa-gem major style1 bounce"><span class="label">Lorem</span></span></li>
+						<li><span class="icon fa-heart major style2 bounce"><span class="label">Ipsum</span></span></li>
+						<li><span class="icon solid fa-code major style3 bounce"><span class="label">Dolor</span></span></li>
+					</ul>
+				</div>
+			</section>
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="image"><img src="images/banner.jpg." alt="" /></div><div class="content"></div>
-							<h2>Roma RP</h2>
-							<p>Un'esperienza indimenticabile<br />
-							Piena di RP e di emozioni<br />
-							Entra qui! <a href="https://discord.gg/romav5">Roma-RP V5</a>.</p>
-							<ul class="actions special">
-								<li><a href="#" class="button primary">Activate</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Scopri la nostra storia!</a>
-					</section>
+			<!-- Two -->
+			<section id="two" class="wrapper alt style2 fade-in">
+				<section class="spotlight fade-in">
+					<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+					<div class="content">
+						<h2>Le Forze dell'Ordine di<br />RomaRP</h2>
+						<p>Coloro che proteggono la città, coloro che la sorvegliano...</p>
+					</div>
+				</section>
+				<section class="spotlight fade-in">
+					<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+					<div class="content">
+						<h2>A.R.E.S. e Vigili del Fuoco<br /></h2>
+						<p>Coloro sempre pronti, veloci, e disponibili, per tutto e per tutti.</p>
+					</div>
+				</section>
+				<section class="spotlight fade-in">
+					<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+					<div class="content">
+						<h2>A.C.I - A.N.A.S.<br /></h2>
+						<p>Protettori della strada.</p>
+					</div>
+				</section>
+			</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Chi Siamo?<br />
-								</h2>
-								<p>Salve, siamo Roma RP, una community ambientata a Roma su ER:LC in costante crescita. 
-									Abbiamo una community molto attiva con cui divertirsi e interagire! Nel server potrai trovare molte istituzioni quali: A.R.E.S. 118, Arma dei Carabinieri e Polizia di Stato,
-									 insieme a molte aziende acquistabili. Ti auguriamo una buona permanenza all'interno del nostro server, e per qualsiasi problema non esitare a chiedere.</p>
-									
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Le Forze dell'Ordine di<br />
-								RomaRP</h2>
-								<p>Coloro che proterggono la città, coloro che la sorvegliao, 
-									e che certe volte la comandano. 
-									Sempre pronti, veloci, agili, e certe volte, agiscono come il vento... Silenzioso, veloce e certe volte, anche dannoso.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>A.R.E.S. e Vigili del Fuoco<br />
-								</h2>
-								<p>Coloro sempre pronti, veloci, e disponibili, per tutto e per tutti.
-									Sempre con la mente lucida, e sangue freddo.
-								</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>A.C.I - A.N.A.S.<br />
-								</h2>
-								<p>Protettori della strada.</p>
-							</div>
-						</section>
-					</section>
-
-		<!-- Footer -->
-			<footer id="footer">
+			<!-- Footer -->
+			<footer id="footer" class="fade-in">
 				<ul class="icons">
-					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-					<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="#" class="icon brands fa-twitter bounce"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f bounce"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram bounce"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble bounce"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon solid fa-envelope bounce"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</footer>
 
-	</div>
+		</div>
 
-<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>	
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>	
 
 	</body>
 </html>
