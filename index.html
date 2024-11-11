@@ -97,20 +97,49 @@
 			<!-- Banner -->
 			<section id="banner" class="fade-in">
 				<div class="inner bounce">
-					<!-- Immagine come contenuto della sezione -->
-					<div class="image"><img src="https://i.postimg.cc/65k76s3v/Progetto-senza-titolo.jpg" alt="Roma RP Banner" class="fade-in" /></div>
+					<!-- Immagine migliorata con curve e ombre -->
+					<div class="image">
+						<img src="https://i.postimg.cc/65k76s3v/Progetto-senza-titolo.jpg" alt="Roma RP Banner" class="fade-in enhanced-img" />
+					</div>
 					<div class="content fade-in">
 						<h2>Roma RP</h2>
 						<p>Un'esperienza indimenticabile<br />
 						Piena di RP e di emozioni<br />
 						Entra qui! <a href="https://discord.gg/romav5">Roma-RP V5</a>.</p>
-						<ul class="actions special"> </ul>
+						<ul class="actions special">
+							<li><a href="#" class="button primary bounce">Activate</a></li>
+						</ul>
 					</div>
 					<a href="#one" class="more scrolly fade-in">Scopri la nostra storia!</a>
 				</div>
 			</section>
 			
+			<style>
+				/* Styling per l'immagine migliorata */
+				.enhanced-img {
+					width: 100%; /* Assicura che l'immagine occupi tutta la larghezza disponibile */
+					border-radius: 15px; /* Curva gli angoli dell'immagine */
+					box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Aggiungi ombra leggera */
+					transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effetti di transizione per hover */
+				}
 			
+				.enhanced-img:hover {
+					transform: scale(1.05); /* Effetto di zoom quando l'immagine è in hover */
+					box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Ombra più marcata al passaggio del mouse */
+				}
+			
+				/* Opzionale: per migliorare la visibilità del contenuto */
+				#banner {
+					background-color: rgba(0, 0, 0, 0.5); /* Sovrapposizione semitrasparente per migliorare la leggibilità */
+					color: white; /* Colore del testo bianco per contrasto */
+					border-radius: 15px; /* Curva gli angoli della sezione */
+				}
+			
+				/* Effetto di transizione per la sezione banner */
+				#banner {
+					transition: background-color 0.3s ease;
+				}
+			</style>
 
 			<!-- One: Sezione "Chi Siamo" modificata -->
 			<section id="one" class="wrapper style1 special fade-in">
