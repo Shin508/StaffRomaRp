@@ -60,10 +60,25 @@
 				animation: bounce 2s infinite;
 			}
 
-			@keyframes bounce {
-				0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-				40% { transform: translateY(-20px); }
-				60% { transform: translateY(-10px); }
+			/* Styling per l'immagine migliorata */
+			.enhanced-img {
+				width: 100%; /* Assicura che l'immagine occupi tutta la larghezza disponibile */
+				border-radius: 15px; /* Curva gli angoli dell'immagine */
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Aggiungi ombra leggera */
+				transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effetti di transizione per hover */
+			}
+
+			.enhanced-img:hover {
+				transform: scale(1.05); /* Effetto di zoom quando l'immagine è in hover */
+				box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Ombra più marcata al passaggio del mouse */
+			}
+
+			/* Migliora la visibilità del banner */
+			#banner {
+				background-color: rgba(0, 0, 0, 0.5); /* Sovrapposizione semitrasparente per migliorare la leggibilità */
+				color: white; /* Colore del testo bianco per contrasto */
+				border-radius: 15px; /* Curva gli angoli della sezione */
+				transition: background-color 0.3s ease;
 			}
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -113,33 +128,6 @@
 					<a href="#one" class="more scrolly fade-in">Scopri la nostra storia!</a>
 				</div>
 			</section>
-			
-			<style>
-				/* Styling per l'immagine migliorata */
-				.enhanced-img {
-					width: 100%; /* Assicura che l'immagine occupi tutta la larghezza disponibile */
-					border-radius: 15px; /* Curva gli angoli dell'immagine */
-					box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Aggiungi ombra leggera */
-					transition: transform 0.3s ease, box-shadow 0.3s ease; /* Effetti di transizione per hover */
-				}
-			
-				.enhanced-img:hover {
-					transform: scale(1.05); /* Effetto di zoom quando l'immagine è in hover */
-					box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Ombra più marcata al passaggio del mouse */
-				}
-			
-				/* Opzionale: per migliorare la visibilità del contenuto */
-				#banner {
-					background-color: rgba(0, 0, 0, 0.5); /* Sovrapposizione semitrasparente per migliorare la leggibilità */
-					color: white; /* Colore del testo bianco per contrasto */
-					border-radius: 15px; /* Curva gli angoli della sezione */
-				}
-			
-				/* Effetto di transizione per la sezione banner */
-				#banner {
-					transition: background-color 0.3s ease;
-				}
-			</style>
 
 			<!-- One: Sezione "Chi Siamo" modificata -->
 			<section id="one" class="wrapper style1 special fade-in">
@@ -164,7 +152,7 @@
 					<div class="image"><img src="images/pic01.jpg" alt="" /></div>
 					<div class="content">
 						<h2>Le Forze dell'Ordine di<br />RomaRP</h2>
-						<p>Coloro che proterggono la città, coloro che la sorvegliao, 
+						<p>Coloro che proteggono la città, coloro che la sorvegliano, 
 							e che certe volte la comandano. 
 							Sempre pronti, veloci, agili, e certe volte, agiscono come il vento... Silenzioso, veloce e doloroso</p>
 					</div>
@@ -212,4 +200,3 @@
 
 	</body>
 </html>
-
